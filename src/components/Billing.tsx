@@ -3,7 +3,7 @@ import styles, { layout } from "../styles"
 
 const Billing: React.FC = (): JSX.Element => {
   return (
-    <section id="billing" className={`${layout.sectionReverse}`}>
+    <section id="product" className={`${layout.sectionReverse}`}>
       <div className={`${layout.sectionImgReverse}`}>
         <img src={bill} alt="bill" className="w-[100%] h-[100%] relative z-[5]" />
         {/** gradient bg start */}
