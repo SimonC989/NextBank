@@ -9,7 +9,7 @@ export interface IFeatureProps {
   content: string;
 }
 
-const FeatureCard = ({ icon, title, content, index }: IFeatureProps) => (
+const FeatureCard = ({ icon, title, content, index }: IFeatureProps): JSX.Element => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
@@ -25,7 +25,7 @@ const FeatureCard = ({ icon, title, content, index }: IFeatureProps) => (
   </div>
 );
 
-const Business = () => {
+const Business: React.FC = (): JSX.Element => {
   return (
     <section id='features' className={layout.section}>
       <div className={layout.sectionInfo}>

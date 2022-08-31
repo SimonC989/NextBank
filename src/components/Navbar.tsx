@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { close, logo, menu } from '../assets'
 import { navLinks } from '../constants'
 
-const Navbar = () => {
+const Navbar: React.FC = (): JSX.Element => {
   const [toggle, setToggle] = useState(false)
 
   return (
